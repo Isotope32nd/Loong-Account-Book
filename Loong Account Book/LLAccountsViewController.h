@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LLAccountsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *remainingLabel;
+@property (weak, nonatomic) IBOutlet UITableView *detailTableView;
 
 @end
 

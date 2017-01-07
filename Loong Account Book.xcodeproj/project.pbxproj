@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		337372CF1E0E2392003C3986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372CE1E0E2392003C3986 /* main.m */; };
 		337372D21E0E2392003C3986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372D11E0E2392003C3986 /* AppDelegate.m */; };
-		337372D51E0E2392003C3986 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372D41E0E2392003C3986 /* ViewController.m */; };
+		337372D51E0E2392003C3986 /* LLAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372D41E0E2392003C3986 /* LLAccountsViewController.m */; };
 		337372D81E0E2392003C3986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337372D61E0E2392003C3986 /* Main.storyboard */; };
 		337372DA1E0E2392003C3986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337372D91E0E2392003C3986 /* Assets.xcassets */; };
 		337372DD1E0E2392003C3986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337372DB1E0E2392003C3986 /* LaunchScreen.storyboard */; };
 		337372E81E0E2392003C3986 /* Loong_Account_BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372E71E0E2392003C3986 /* Loong_Account_BookTests.m */; };
 		337372F31E0E2392003C3986 /* Loong_Account_BookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372F21E0E2392003C3986 /* Loong_Account_BookUITests.m */; };
+		33F67B881E209FDA00F9D82B /* DBFile in Resources */ = {isa = PBXBuildFile; fileRef = 33F67B871E209FDA00F9D82B /* DBFile */; };
+		33F67B8C1E20E0C500F9D82B /* LLRecordListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */; };
+		33F67B901E20EFBB00F9D82B /* LLRecordData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F67B8F1E20EFBB00F9D82B /* LLRecordData.m */; };
+		79B0AA214C3C3458D77E896F /* Pods_Loong_Account_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825286F458B2079DB130B6CB /* Pods_Loong_Account_Book.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24557EE7C5BDD5FED1A028F3 /* Pods-Loong Account Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loong Account Book.release.xcconfig"; path = "Pods/Target Support Files/Pods-Loong Account Book/Pods-Loong Account Book.release.xcconfig"; sourceTree = "<group>"; };
 		337372CA1E0E2392003C3986 /* Loong Account Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loong Account Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337372CE1E0E2392003C3986 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		337372D01E0E2392003C3986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		337372D11E0E2392003C3986 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		337372D31E0E2392003C3986 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		337372D41E0E2392003C3986 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		337372D31E0E2392003C3986 /* LLAccountsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAccountsViewController.h; sourceTree = "<group>"; };
+		337372D41E0E2392003C3986 /* LLAccountsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAccountsViewController.m; sourceTree = "<group>"; };
 		337372D71E0E2392003C3986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		337372D91E0E2392003C3986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337372DC1E0E2392003C3986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		337372EE1E0E2392003C3986 /* Loong Account BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loong Account BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337372F21E0E2392003C3986 /* Loong_Account_BookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loong_Account_BookUITests.m; sourceTree = "<group>"; };
 		337372F41E0E2392003C3986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F67B871E209FDA00F9D82B /* DBFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DBFile; sourceTree = "<group>"; };
+		33F67B8A1E20E0C500F9D82B /* LLRecordListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecordListTableViewCell.h; sourceTree = "<group>"; };
+		33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecordListTableViewCell.m; sourceTree = "<group>"; };
+		33F67B8E1E20EFBB00F9D82B /* LLRecordData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecordData.h; sourceTree = "<group>"; };
+		33F67B8F1E20EFBB00F9D82B /* LLRecordData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecordData.m; sourceTree = "<group>"; };
+		825286F458B2079DB130B6CB /* Pods_Loong_Account_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loong_Account_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		863687D2BD995955A24CE8DB /* Pods-Loong Account Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loong Account Book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Loong Account Book/Pods-Loong Account Book.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B0AA214C3C3458D77E896F /* Pods_Loong_Account_Book.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31719E380E6379B35039B374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				825286F458B2079DB130B6CB /* Pods_Loong_Account_Book.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		337372C11E0E2392003C3986 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,8 @@
 				337372E61E0E2392003C3986 /* Loong Account BookTests */,
 				337372F11E0E2392003C3986 /* Loong Account BookUITests */,
 				337372CB1E0E2392003C3986 /* Products */,
+				D1A5110D6AE387649E8862C2 /* Pods */,
+				31719E380E6379B35039B374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +124,14 @@
 		337372CC1E0E2392003C3986 /* Loong Account Book */ = {
 			isa = PBXGroup;
 			children = (
+				33F67B8D1E20EF6E00F9D82B /* Models */,
+				33F67B891E20A64100F9D82B /* Views */,
+				33F67B861E209FB900F9D82B /* Assets */,
 				337372D01E0E2392003C3986 /* AppDelegate.h */,
 				337372D11E0E2392003C3986 /* AppDelegate.m */,
-				337372D31E0E2392003C3986 /* ViewController.h */,
-				337372D41E0E2392003C3986 /* ViewController.m */,
+				337372D31E0E2392003C3986 /* LLAccountsViewController.h */,
+				337372D41E0E2392003C3986 /* LLAccountsViewController.m */,
 				337372D61E0E2392003C3986 /* Main.storyboard */,
-				337372D91E0E2392003C3986 /* Assets.xcassets */,
 				337372DB1E0E2392003C3986 /* LaunchScreen.storyboard */,
 				337372DE1E0E2392003C3986 /* Info.plist */,
 				337372CD1E0E2392003C3986 /* Supporting Files */,
@@ -140,6 +165,42 @@
 			path = "Loong Account BookUITests";
 			sourceTree = "<group>";
 		};
+		33F67B861E209FB900F9D82B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				33F67B871E209FDA00F9D82B /* DBFile */,
+				337372D91E0E2392003C3986 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		33F67B891E20A64100F9D82B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33F67B8A1E20E0C500F9D82B /* LLRecordListTableViewCell.h */,
+				33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33F67B8D1E20EF6E00F9D82B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33F67B8E1E20EFBB00F9D82B /* LLRecordData.h */,
+				33F67B8F1E20EFBB00F9D82B /* LLRecordData.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1A5110D6AE387649E8862C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				863687D2BD995955A24CE8DB /* Pods-Loong Account Book.debug.xcconfig */,
+				24557EE7C5BDD5FED1A028F3 /* Pods-Loong Account Book.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337372F71E0E2392003C3986 /* Build configuration list for PBXNativeTarget "Loong Account Book" */;
 			buildPhases = (
+				69C99D827DEAF4080947CADA /* [CP] Check Pods Manifest.lock */,
 				337372C61E0E2392003C3986 /* Sources */,
 				337372C71E0E2392003C3986 /* Frameworks */,
 				337372C81E0E2392003C3986 /* Resources */,
+				A8B056230DDFC321070C580E /* [CP] Embed Pods Frameworks */,
+				09BDF5597F18CF1AD6D35477 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +271,7 @@
 				TargetAttributes = {
 					337372C91E0E2392003C3986 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N43NWL5C72;
 						ProvisioningStyle = Automatic;
 					};
 					337372E21E0E2392003C3986 = {
@@ -246,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F67B881E209FDA00F9D82B /* DBFile in Resources */,
 				337372DD1E0E2392003C3986 /* LaunchScreen.storyboard in Resources */,
 				337372DA1E0E2392003C3986 /* Assets.xcassets in Resources */,
 				337372D81E0E2392003C3986 /* Main.storyboard in Resources */,
@@ -268,13 +334,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09BDF5597F18CF1AD6D35477 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Loong Account Book/Pods-Loong Account Book-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C99D827DEAF4080947CADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B056230DDFC321070C580E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Loong Account Book/Pods-Loong Account Book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		337372C61E0E2392003C3986 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337372D51E0E2392003C3986 /* ViewController.m in Sources */,
+				33F67B8C1E20E0C500F9D82B /* LLRecordListTableViewCell.m in Sources */,
+				337372D51E0E2392003C3986 /* LLAccountsViewController.m in Sources */,
 				337372D21E0E2392003C3986 /* AppDelegate.m in Sources */,
+				33F67B901E20EFBB00F9D82B /* LLRecordData.m in Sources */,
 				337372CF1E0E2392003C3986 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,9 +538,12 @@
 		};
 		337372F81E0E2392003C3986 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863687D2BD995955A24CE8DB /* Pods-Loong Account Book.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N43NWL5C72;
 				INFOPLIST_FILE = "Loong Account Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loong-loong.Loong-Account-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,9 +552,12 @@
 		};
 		337372F91E0E2392003C3986 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24557EE7C5BDD5FED1A028F3 /* Pods-Loong Account Book.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N43NWL5C72;
 				INFOPLIST_FILE = "Loong Account Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.loong-loong.Loong-Account-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +629,7 @@
 				337372F91E0E2392003C3986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		337372FA1E0E2392003C3986 /* Build configuration list for PBXNativeTarget "Loong Account BookTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +638,7 @@
 				337372FC1E0E2392003C3986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		337372FD1E0E2392003C3986 /* Build configuration list for PBXNativeTarget "Loong Account BookUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +647,7 @@
 				337372FF1E0E2392003C3986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

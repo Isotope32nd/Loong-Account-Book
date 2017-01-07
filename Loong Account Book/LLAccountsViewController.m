@@ -6,13 +6,13 @@
 //  Copyright © 2016年 梁梓龙. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LLAccountsViewController.h"
 
-@interface ViewController ()
+@interface LLAccountsViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LLAccountsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
