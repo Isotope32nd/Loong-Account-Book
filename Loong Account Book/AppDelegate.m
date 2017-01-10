@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //应用打开的时候检测是否存在如果存在则把包内的数据库文件复制到documents目录内作为初始文件。
+    NSString *homeDirectory = NSHomeDirectory();
+    NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *databaseDirectory = [documentsPath stringByAppendingPathComponent:@"Database"];
+    if (![[NSFileManager defaultManager]fileExistsAtPath:[databaseDirectory stringByAppendingPathComponent:@"AccountBook.sql"]]) {
+    }
+    
     return YES;
 }
 

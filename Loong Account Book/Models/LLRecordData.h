@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FMDB.h"
+
 @interface LLRecordData : NSObject
+
+@property (nonatomic, assign) int recordId;
+@property (nonatomic, assign) int typeId;
+@property (nonatomic, assign) double amount;
+@property (nonatomic, strong) NSDate *consumptionDate;
+@property (nonatomic, strong) NSDate *generationDate;
+@property (nonatomic, assign) double remainintSum;
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation LLRecordData
 
+- (instancetype)initWithId:(int)recordId {
+    self = [super init];
+    if (self) {
+        
+        FMDatabase *datebase = [[FMDatabase alloc]init];
+        
+    }
+    return self;
+}
+
 @end
