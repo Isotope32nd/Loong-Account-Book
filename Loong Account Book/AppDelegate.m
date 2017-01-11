@@ -19,10 +19,25 @@
     // Override point for customization after application launch.
     
     //应用打开的时候检测是否存在如果存在则把包内的数据库文件复制到documents目录内作为初始文件。
-    NSString *homeDirectory = NSHomeDirectory();
     NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *databaseDirectory = [documentsPath stringByAppendingPathComponent:@"Database"];
+    NSLog(@"sandbox path : %@", databaseDirectory);
     if (![[NSFileManager defaultManager]fileExistsAtPath:[databaseDirectory stringByAppendingPathComponent:@"AccountBook.sql"]]) {
+        NSLog(@"沙盒中不存在数据库文件！");
+        //创建Database目录
+        if ([[NSFileManager defaultManager]createDirectoryAtPath:databaseDirectory withIntermediateDirectories:YES attributes:nil error:nil]) {
+            NSLog(@"Database目录已存在或创建成功！");
+        } else {
+            NSLog(@"Database目录创建失败！");
+        }
+        //复制数据库文件到沙盒中
+        NSString *dbBundlePath = [[NSBundle mainBundle]pathForResource:@"DBFile/AccountBook" ofType:@"sql"];
+        BOOL success = [[NSFileManager defaultManager]copyItemAtPath:dbBundlePath toPath:[databaseDirectory stringByAppendingPathComponent:@"AccountBook.sql"] error:nil];
+        if (success) {
+            NSLog(@"数据库文件复制成功！");
+        } else {
+            NSLog(@"数据库文件复制失败！");
+        }
     }
     
     return YES;

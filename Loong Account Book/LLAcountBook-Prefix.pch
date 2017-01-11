@@ -1,0 +1,38 @@
+//
+//  LLAcountBook-Prefix.pch
+//  Loong Account Book
+//
+//  Created by 神龟网-梁梓龙 on 2017/1/11.
+//  Copyright © 2017年 梁梓龙. All rights reserved.
+//
+
+#ifndef LLAcountBook_Prefix_pch
+#define LLAcountBook_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define LLDatabaseFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"Database/AccountBook.sql"]
+
+#define LLAccountTableName @"account_book"  /**< 记录详细账单记录的表 */
+#define LLversionTableName @"ab_db_ver"     /**< 记录数据库设计版本内容的表 */
+#define LLRecordTypeTableName @"rec_type"   /**< 记录支出和收入类型的表 */
+
+//表account_book的字段
+#define LLABIdFieldName @"id"
+#define LLABTypeIdFieldName @"type_id"
+#define LLABAmountFieldName @"amount"
+#define LLABConsumptionDateFieldName @"con_date"
+#define LLABGenerationDateFieldName @"gen_date"
+#define LLABRemainingSumFieldName @"rem_sum"
+
+//表rec_type的字段
+#define LLRTTypeIdFieldName @"type_id"
+#define LLRTRecordTypeFieldName @"rec_type"
+#define LLRTDescriptionFieldName @"description"
+
+//表ab_db_ver的字段
+#define LLVerVersionFieldName @"version"
+#define LLVerDescriptionFieldName @"description"
+
+#endif /* LLAcountBook_Prefix_pch */

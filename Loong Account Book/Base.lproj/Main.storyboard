@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="192" width="375" height="475"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordListCell" id="7Qa-1w-3oC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordListCell" id="7Qa-1w-3oC" customClass="LLRecordListTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Qa-1w-3oC" id="YG6-Qu-MLQ">
@@ -81,8 +81,16 @@
                                                 <constraint firstItem="qQP-r0-eJq" firstAttribute="centerY" secondItem="YG6-Qu-MLQ" secondAttribute="centerY" id="xKd-aH-dmV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="qQP-r0-eJq" id="tJD-Wy-7Dn"/>
+                                            <outlet property="typeLabel" destination="KJy-6z-Noy" id="hDN-zD-B9T"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="R9H-z3-T73"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tpU-g3-EVZ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.88934694438782103" green="0.9542061241784352" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,7 +106,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tav-yi-ztx">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="UKC-Qa-NCx"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="UKC-Qa-NCx">
+                            <connections>
+                                <action selector="addRecordAction:" destination="BYZ-38-t0r" id="aeb-VB-jDc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailTableView" destination="XUU-ka-qIo" id="ug9-Bx-lBd"/>

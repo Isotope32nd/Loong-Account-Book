@@ -56,6 +56,7 @@
 		337372EE1E0E2392003C3986 /* Loong Account BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loong Account BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337372F21E0E2392003C3986 /* Loong_Account_BookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loong_Account_BookUITests.m; sourceTree = "<group>"; };
 		337372F41E0E2392003C3986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D11F891E25DD3C00B25C99 /* LLAcountBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLAcountBook-Prefix.pch"; sourceTree = "<group>"; };
 		33F67B871E209FDA00F9D82B /* DBFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DBFile; sourceTree = "<group>"; };
 		33F67B8A1E20E0C500F9D82B /* LLRecordListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecordListTableViewCell.h; sourceTree = "<group>"; };
 		33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecordListTableViewCell.m; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				337372CE1E0E2392003C3986 /* main.m */,
+				33D11F891E25DD3C00B25C99 /* LLAcountBook-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -542,6 +544,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N43NWL5C72;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/liangzilong/Desktop/Test Code/Loong Account Book/Loong Account Book/LLAcountBook-Prefix.pch";
 				INFOPLIST_FILE = "Loong Account Book/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -557,6 +561,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N43NWL5C72;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/liangzilong/Desktop/Test Code/Loong Account Book/Loong Account Book/LLAcountBook-Prefix.pch";
 				INFOPLIST_FILE = "Loong Account Book/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LLAccountsViewController : UIViewController
+@class LLRecordData;
+@class LLRecordListTableViewCell;
+
+@interface LLAccountsViewController : UIViewController <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UILabel *remainingLabel;
 @property (weak, nonatomic) IBOutlet UITableView *detailTableView;

@@ -10,4 +10,7 @@
 
 @interface LLRecordListTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *typeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+
 @end
