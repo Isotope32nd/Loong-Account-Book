@@ -15,6 +15,8 @@
 		337372DD1E0E2392003C3986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337372DB1E0E2392003C3986 /* LaunchScreen.storyboard */; };
 		337372E81E0E2392003C3986 /* Loong_Account_BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372E71E0E2392003C3986 /* Loong_Account_BookTests.m */; };
 		337372F31E0E2392003C3986 /* Loong_Account_BookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 337372F21E0E2392003C3986 /* Loong_Account_BookUITests.m */; };
+		33C481501E276A8A00FFC2BC /* LLAddRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C4814F1E276A8A00FFC2BC /* LLAddRecordView.m */; };
+		33C481521E276A9D00FFC2BC /* LLAddRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C481511E276A9D00FFC2BC /* LLAddRecordView.xib */; };
 		33F67B881E209FDA00F9D82B /* DBFile in Resources */ = {isa = PBXBuildFile; fileRef = 33F67B871E209FDA00F9D82B /* DBFile */; };
 		33F67B8C1E20E0C500F9D82B /* LLRecordListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */; };
 		33F67B901E20EFBB00F9D82B /* LLRecordData.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F67B8F1E20EFBB00F9D82B /* LLRecordData.m */; };
@@ -56,6 +58,9 @@
 		337372EE1E0E2392003C3986 /* Loong Account BookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loong Account BookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337372F21E0E2392003C3986 /* Loong_Account_BookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loong_Account_BookUITests.m; sourceTree = "<group>"; };
 		337372F41E0E2392003C3986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33C4814E1E276A8A00FFC2BC /* LLAddRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAddRecordView.h; sourceTree = "<group>"; };
+		33C4814F1E276A8A00FFC2BC /* LLAddRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAddRecordView.m; sourceTree = "<group>"; };
+		33C481511E276A9D00FFC2BC /* LLAddRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLAddRecordView.xib; sourceTree = "<group>"; };
 		33D11F891E25DD3C00B25C99 /* LLAcountBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLAcountBook-Prefix.pch"; sourceTree = "<group>"; };
 		33F67B871E209FDA00F9D82B /* DBFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DBFile; sourceTree = "<group>"; };
 		33F67B8A1E20E0C500F9D82B /* LLRecordListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecordListTableViewCell.h; sourceTree = "<group>"; };
@@ -181,6 +186,9 @@
 			children = (
 				33F67B8A1E20E0C500F9D82B /* LLRecordListTableViewCell.h */,
 				33F67B8B1E20E0C500F9D82B /* LLRecordListTableViewCell.m */,
+				33C4814E1E276A8A00FFC2BC /* LLAddRecordView.h */,
+				33C4814F1E276A8A00FFC2BC /* LLAddRecordView.m */,
+				33C481511E276A9D00FFC2BC /* LLAddRecordView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C481521E276A9D00FFC2BC /* LLAddRecordView.xib in Resources */,
 				33F67B881E209FDA00F9D82B /* DBFile in Resources */,
 				337372DD1E0E2392003C3986 /* LaunchScreen.storyboard in Resources */,
 				337372DA1E0E2392003C3986 /* Assets.xcassets in Resources */,
@@ -394,6 +403,7 @@
 				337372D21E0E2392003C3986 /* AppDelegate.m in Sources */,
 				33F67B901E20EFBB00F9D82B /* LLRecordData.m in Sources */,
 				337372CF1E0E2392003C3986 /* main.m in Sources */,
+				33C481501E276A8A00FFC2BC /* LLAddRecordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

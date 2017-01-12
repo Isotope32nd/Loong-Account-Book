@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLAddRecordView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LLAddRecordView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-6h-2bt">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3N-NQ-Arx">
+                            <rect key="frame" x="317" y="7" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="TPF-1M-B4D"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e3-Qz-XPr">
+                            <rect key="frame" x="8" y="7" width="46" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="zD6-EW-EWh"/>
+                            </constraints>
+                            <state key="normal" title="收入"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sr-K1-tTa">
+                            <rect key="frame" x="299" y="11" width="18" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="4e3-Qz-XPr" firstAttribute="leading" secondItem="DQu-6h-2bt" secondAttribute="leading" constant="8" id="FXU-We-835"/>
+                        <constraint firstItem="h3N-NQ-Arx" firstAttribute="leading" secondItem="6Sr-K1-tTa" secondAttribute="trailing" id="Mug-R4-Bgx"/>
+                        <constraint firstItem="4e3-Qz-XPr" firstAttribute="centerY" secondItem="DQu-6h-2bt" secondAttribute="centerY" id="gIY-ZM-xdk"/>
+                        <constraint firstAttribute="height" constant="44" id="gho-8W-XyK"/>
+                        <constraint firstItem="6Sr-K1-tTa" firstAttribute="centerY" secondItem="DQu-6h-2bt" secondAttribute="centerY" id="hpB-w6-7KY"/>
+                        <constraint firstAttribute="trailing" secondItem="h3N-NQ-Arx" secondAttribute="trailing" constant="8" id="yhD-lC-8sS"/>
+                        <constraint firstItem="h3N-NQ-Arx" firstAttribute="centerY" secondItem="DQu-6h-2bt" secondAttribute="centerY" id="z5G-hZ-vFS"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-Xc-NO6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="N8g-fa-oiq"/>
+                        <barButtonItem title="确定" id="Mey-So-ZB4"/>
+                    </items>
+                </toolbar>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSj-Dl-seS">
+                    <rect key="frame" x="0.0" y="88" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KP3-Xc-NO6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Ee-F0-Lua"/>
+                <constraint firstItem="KP3-Xc-NO6" firstAttribute="leading" secondItem="DQu-6h-2bt" secondAttribute="leading" id="HdQ-QG-2be"/>
+                <constraint firstAttribute="trailing" secondItem="KP3-Xc-NO6" secondAttribute="trailing" id="Ur9-Lm-6hz"/>
+                <constraint firstItem="KP3-Xc-NO6" firstAttribute="trailing" secondItem="DQu-6h-2bt" secondAttribute="trailing" id="XWx-D1-gZt"/>
+                <constraint firstItem="qSj-Dl-seS" firstAttribute="trailing" secondItem="DQu-6h-2bt" secondAttribute="trailing" id="ZBx-IW-1tp"/>
+                <constraint firstItem="KP3-Xc-NO6" firstAttribute="bottom" secondItem="DQu-6h-2bt" secondAttribute="top" id="cUh-Pu-cHh"/>
+                <constraint firstItem="qSj-Dl-seS" firstAttribute="leading" secondItem="DQu-6h-2bt" secondAttribute="leading" id="hkh-sE-zFi"/>
+                <constraint firstAttribute="bottom" secondItem="qSj-Dl-seS" secondAttribute="bottom" id="hss-CI-DrK"/>
+                <constraint firstItem="KP3-Xc-NO6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lO1-73-xc3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="77" y="82"/>
+        </view>
+    </objects>
+</document>

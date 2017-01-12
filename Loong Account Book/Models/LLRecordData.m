@@ -15,6 +15,8 @@
     FMDatabase *database = [FMDatabase databaseWithPath:LLDatabaseFilePath];
     BOOL success = [database executeQueryWithFormat:@"INSERT INTO %@ (%@, %@, %@, %@, %@) VALUES (%@, %@, %@, %@, %@);", LLAccountTableName, LLABTypeIdFieldName, LLABAmountFieldName, LLABConsumptionDateFieldName, LLABGenerationDateFieldName, LLABRemainingSumFieldName, @(recordData.typeId), @(recordData.amount), recordData.consumptionDate, recordData.generationDate, @(recordData.remainingSum)];
     
+    [database close];
+    
     return success;
 }
 
@@ -26,6 +28,8 @@
         LLRecordData *record = [[LLRecordData alloc]init];
         [resultArray addObject:record];
     }
+    
+    [database close];
     return resultArray;
 }
 
@@ -42,6 +46,8 @@
             _consumptionDate = [resultSet dateForColumn:LLABConsumptionDateFieldName];
             _generationDate = [resultSet dateForColumn:LLABGenerationDateFieldName];
             _remainingSum = [resultSet doubleForColumn:LLABRemainingSumFieldName];
+            
+            [database close];
         }
     }
     return self;

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class LLRecordData;
-@class LLRecordListTableViewCell;
+@class LLAddRecordView;
 
 @interface LLAccountsViewController : UIViewController <UITableViewDataSource>
 

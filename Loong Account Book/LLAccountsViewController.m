@@ -11,6 +11,8 @@
 #import "LLRecordData.h"
 #import "LLRecordListTableViewCell.h"
 
+#import "LLAddRecordView.h"
+
 @interface LLAccountsViewController ()
 
 @property (strong, nonatomic) NSArray *recordList;
@@ -36,6 +38,9 @@
 #pragma mark - Event Response
 
 - (IBAction)addRecordAction:(UIBarButtonItem *)sender {
+    
+    LLAddRecordView *addView = [[NSBundle mainBundle]loadNibNamed:@"LLAddRecordView" owner:nil options:nil].firstObject;
+    [self.view addSubview:addView];
 }
 
 #pragma mark - UITableViewDataSource

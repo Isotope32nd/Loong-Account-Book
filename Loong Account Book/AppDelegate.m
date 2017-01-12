@@ -21,7 +21,7 @@
     //应用打开的时候检测是否存在如果存在则把包内的数据库文件复制到documents目录内作为初始文件。
     NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *databaseDirectory = [documentsPath stringByAppendingPathComponent:@"Database"];
-    NSLog(@"sandbox path : %@", databaseDirectory);
+//    NSLog(@"sandbox path : %@", databaseDirectory);
     if (![[NSFileManager defaultManager]fileExistsAtPath:[databaseDirectory stringByAppendingPathComponent:@"AccountBook.sql"]]) {
         NSLog(@"沙盒中不存在数据库文件！");
         //创建Database目录
